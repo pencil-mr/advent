@@ -8,7 +8,7 @@ int main(int argc, char** argv) {
         return 1;
     }
     FILE* file = fopen(argv[1], "r");
-    if !(file) {
+    if (!file) {
         fprintf(stderr, "Could not open file %s: %s", argv[1], strerror(errno));
         return 1;
     }
