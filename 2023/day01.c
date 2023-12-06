@@ -9,7 +9,7 @@ int main(int argc, char** argv) {
     }
     FILE* file = fopen(argv[1], "r");
     if (!file) {
-        fprintf(stderr, "Could not open file %s: %s", argv[1], strerror(errno));
+        fprintf(stderr, "Could not open file '%s': %s", argv[1], strerror(errno));
         return 1;
     }
 }
