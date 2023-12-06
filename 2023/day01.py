@@ -9,6 +9,8 @@ if __name__ == "__main__":
     f = open(fn, "r")
     lines = f.readlines()
     for line in lines:
+        first = 0
+        last = 0
         it = 0
         ln = len(line)
         for c in line:
